@@ -1,0 +1,1289 @@
+Started GET "/" for 127.0.0.1 at 2017-09-09 13:59:13 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/david/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/david/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.3/lib/rails/templates/rails/welcome/index.html.erb (11.3ms)
+Completed 200 OK in 632ms (Views: 43.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-09-09 13:59:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/buy" for ::1 at 2017-09-09 14:00:03 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>2, "buy"=>{"product_id"=>2, "user_id"=>2}}
+Completed 404 Not Found in 157ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 14:01:13 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>1, "user_id"=>1, "buy"=>{"product_id"=>1, "user_id"=>1}}
+Completed 500 Internal Server Error in 15ms
+
+
+  
+NoMethodError (undefined method `id' for #<HTTParty::Response:0x0055745cfeaee0>):
+  
+app/controllers/buy_controller.rb:9:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 14:01:49 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>1, "user_id"=>1, "buy"=>{"product_id"=>1, "user_id"=>1}}
+Completed 500 Internal Server Error in 21ms
+
+
+  
+NoMethodError (undefined method `id' for #<HTTParty::Response:0x0055745ce43718>):
+  
+app/controllers/buy_controller.rb:9:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 14:01:59 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>1, "user_id"=>1, "buy"=>{"product_id"=>1, "user_id"=>1}}
+Completed 500 Internal Server Error in 113ms
+
+
+  
+NoMethodError (undefined method `id' for #<HTTParty::Response:0x00558f4588efa8>):
+  
+app/controllers/buy_controller.rb:9:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 14:02:24 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>1, "user_id"=>1, "buy"=>{"product_id"=>1, "user_id"=>1}}
+Completed 201 Created in 86ms (Views: 0.5ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 14:59:24 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>1, "user_id"=>1, "buy"=>{"product_id"=>1, "user_id"=>1}}
+Completed 500 Internal Server Error in 161ms
+
+
+  
+NameError (undefined local variable or method `results' for #<BuyController:0x00556f3e1e0390>):
+  
+app/controllers/buy_controller.rb:40:in `getElement'
+app/controllers/buy_controller.rb:4:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:00:09 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>1, "user_id"=>1, "buy"=>{"product_id"=>1, "user_id"=>1}}
+Completed 201 Created in 121ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:00:23 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>2, "buy"=>{"product_id"=>2, "user_id"=>2}}
+Completed 404 Not Found in 54ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:16:08 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 500 Internal Server Error in 32ms
+
+
+  
+NoMethodError (undefined method `getElement' for #<BuyController:0x00558d4d0dbad0>):
+  
+app/controllers/buy_controller.rb:4:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:16:47 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 500 Internal Server Error in 12ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/buy_controller.rb:13:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:17:00 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 500 Internal Server Error in 94ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/buy_controller.rb:13:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:17:31 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 204 No Content in 110ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:18:26 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 96ms (Views: 0.3ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:20:45 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 261ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:21:01 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 72ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:21:38 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 190ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:22:35 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 135ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:22:39 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 27ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:22:40 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 44ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:22:41 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 204 No Content in 9ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:23:36 -0500
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"product_id": 2,
+}
+  
+ActionDispatch::Http::Parameters::ParseError (743: unexpected token at '{
+	"product_id": 2,
+}'):
+  
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:113:in `rescue in parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:107:in `parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:358:in `block in POST'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:357:in `POST'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+activerecord (5.1.3) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.3) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.3) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.3) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/buy" for ::1 at 2017-09-09 15:23:39 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 204 No Content in 10ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:23:44 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>5, "buy"=>{"product_id"=>2, "user_id"=>5}}
+Completed 400 Bad Request in 35ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:23:55 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "buy"=>{"product_id"=>2}}
+Completed 204 No Content in 66ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:23:59 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "buy"=>{"product_id"=>2}}
+Completed 204 No Content in 10ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:24:00 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "buy"=>{"product_id"=>2}}
+Completed 204 No Content in 20ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:24:15 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "buy"=>{"product_id"=>2}}
+Completed 204 No Content in 13ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:24:22 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>"asfs", "buy"=>{"product_id"=>2, "user_id"=>"asfs"}}
+Completed 400 Bad Request in 38ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:24:27 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "buy"=>{"product_id"=>2}}
+Completed 204 No Content in 11ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:24:35 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"user_id"=>1, "buy"=>{"user_id"=>1}}
+Completed 500 Internal Server Error in 27ms
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/buy_controller.rb:9:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:24:53 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 204 No Content in 13ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:24:59 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>"asf", "buy"=>{"product_id"=>2, "user_id"=>"asf"}}
+Completed 400 Bad Request in 38ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:25:05 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>"afasf", "user_id"=>1, "buy"=>{"product_id"=>"afasf", "user_id"=>1}}
+Completed 400 Bad Request in 11ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:25:11 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"user_id"=>1, "buy"=>{"user_id"=>1}}
+Completed 500 Internal Server Error in 13ms
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/buy_controller.rb:9:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:27:05 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"user_id"=>1, "buy"=>{"user_id"=>1}}
+Completed 500 Internal Server Error in 101ms
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/buy_controller.rb:9:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:27:10 -0500
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"product_id": "afasf",
+}
+  
+ActionDispatch::Http::Parameters::ParseError (743: unexpected token at '{
+	"product_id": "afasf",
+}'):
+  
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:113:in `rescue in parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:107:in `parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:358:in `block in POST'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:357:in `POST'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+activerecord (5.1.3) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.3) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.3) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.3) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/buy" for ::1 at 2017-09-09 15:27:22 -0500
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"product_id": 2,
+}
+  
+ActionDispatch::Http::Parameters::ParseError (743: unexpected token at '{
+	"product_id": 2,
+}'):
+  
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:113:in `rescue in parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:107:in `parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:358:in `block in POST'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:357:in `POST'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+activerecord (5.1.3) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.3) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.3) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.3) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/buy" for ::1 at 2017-09-09 15:28:17 -0500
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"product_id": 2,
+}
+  
+ActionDispatch::Http::Parameters::ParseError (743: unexpected token at '{
+	"product_id": 2,
+}'):
+  
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:113:in `rescue in parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:107:in `parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:358:in `block in POST'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:357:in `POST'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+activerecord (5.1.3) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.3) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.3) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.3) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/buy" for ::1 at 2017-09-09 15:30:04 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "buy"=>{"product_id"=>2}}
+Completed 204 No Content in 13ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:30:39 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 204 No Content in 116ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:30:44 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"user_id"=>1, "buy"=>{"user_id"=>1}}
+Completed 500 Internal Server Error in 19ms
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/buy_controller.rb:9:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:33:16 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 204 No Content in 94ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:35:17 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NoMethodError (undefined method `key' for #<ActionController::Parameters:0x0055842bfe1fc8>
+Did you mean?  key?
+               keys):
+  
+app/controllers/buy_controller.rb:4:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:35:32 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 500 Internal Server Error in 101ms
+
+
+  
+NoMethodError (undefined method `key' for #<ActionController::Parameters:0x0055db4c8347f8>
+Did you mean?  key?
+               keys):
+  
+app/controllers/buy_controller.rb:4:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:36:49 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 500 Internal Server Error in 94ms
+
+
+  
+NoMethodError (undefined method `has_key' for #<ActionController::Parameters:0x005624c58eb008>
+Did you mean?  has_key?):
+  
+app/controllers/buy_controller.rb:4:in `sale'
+Started POST "/buy" for ::1 at 2017-09-09 15:37:10 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 204 No Content in 114ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:37:15 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "buy"=>{"product_id"=>2}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:37:18 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "buy"=>{"product_id"=>2}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:37:25 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"user_id"=>1, "buy"=>{"user_id"=>1}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:37:31 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>"asfsf", "user_id"=>1, "buy"=>{"product_id"=>"asfsf", "user_id"=>1}}
+Completed 400 Bad Request in 14ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:38:00 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>"asfas", "user_id"=>99, "buy"=>{"product_id"=>"asfas", "user_id"=>99}}
+Completed 400 Bad Request in 31ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:38:01 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>"asfas", "user_id"=>99, "buy"=>{"product_id"=>"asfas", "user_id"=>99}}
+Completed 400 Bad Request in 30ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 15:38:08 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>200, "user_id"=>99, "buy"=>{"product_id"=>200, "user_id"=>99}}
+Completed 400 Bad Request in 60ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:40 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>200, "user_id"=>99, "buy"=>{"product_id"=>200, "user_id"=>99}}
+Completed 400 Bad Request in 399ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:42 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>200, "user_id"=>99, "buy"=>{"product_id"=>200, "user_id"=>99}}
+Completed 400 Bad Request in 58ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:48 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>1, "user_id"=>1, "buy"=>{"product_id"=>1, "user_id"=>1}}
+Completed 201 Created in 92ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:50 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>1, "user_id"=>1, "buy"=>{"product_id"=>1, "user_id"=>1}}
+Completed 204 No Content in 12ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:54 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 64ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:55 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 30ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:55 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 37ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:55 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 40ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:55 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 26ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:56 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 33ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:00:56 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 29ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:04:27 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 31ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:04:29 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 75ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 16:04:30 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>1, "buy"=>{"product_id"=>2, "user_id"=>1}}
+Completed 201 Created in 36ms (Views: 0.1ms)
+
+
+Started GET "/user/1/sales" for ::1 at 2017-09-09 16:20:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user/1/sales"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/1/sales" for ::1 at 2017-09-09 16:20:34 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 204 No Content in 107ms
+
+
+Started GET "/users/1/sales" for ::1 at 2017-09-09 16:21:00 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 159ms
+
+
+  
+NameError (undefined local variable or method `element' for #<SalesController:0x007f2e5437b4a8>):
+  
+app/controllers/sales_controller.rb:4:in `by_user'
+Started GET "/users/1/sales" for ::1 at 2017-09-09 16:21:13 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 200 OK in 118ms (Views: 0.7ms)
+
+
+Started GET "/users/1/sales" for ::1 at 2017-09-09 16:21:33 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 200 OK in 123ms (Views: 0.5ms)
+
+
+Started GET "/users/1/sales" for ::1 at 2017-09-09 16:21:34 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 200 OK in 19ms (Views: 0.8ms)
+
+
+Started GET "/users/1/sales" for ::1 at 2017-09-09 16:21:50 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 200 OK in 120ms (Views: 0.5ms)
+
+
+Started GET "/users/1/sales" for ::1 at 2017-09-09 16:23:07 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 200 OK in 128ms (Views: 0.5ms)
+
+
+Started GET "/users/1/sales" for ::1 at 2017-09-09 16:23:57 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 124ms
+
+
+  
+TypeError (no implicit conversion of HTTParty::Response into String):
+  
+app/controllers/sales_controller.rb:6:in `by_user'
+Started GET "/users/1/sales" for ::1 at 2017-09-09 16:24:31 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 200 OK in 125ms (Views: 2.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-09 22:19:51 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>55, "user_id"=>55, "buy"=>{"product_id"=>55, "user_id"=>55}}
+Completed 400 Bad Request in 650ms (Views: 0.2ms)
+
+
+Started GET "/users/99/sales" for ::1 at 2017-09-10 12:22:31 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"99"}
+Completed 200 OK in 668ms (Views: 0.3ms)
+
+
+Started GET "/users/99/sales" for ::1 at 2017-09-10 12:22:34 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"99"}
+Completed 200 OK in 7ms (Views: 0.1ms)
+
+
+Started GET "/users/99/sales" for ::1 at 2017-09-10 12:22:56 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"99"}
+Completed 200 OK in 115ms (Views: 0.1ms)
+
+
+Started GET "/users/99/sales" for ::1 at 2017-09-10 12:23:02 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"99"}
+Completed 200 OK in 8ms (Views: 0.1ms)
+
+
+Started GET "/users/99/sales" for ::1 at 2017-09-10 12:25:23 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"99"}
+Completed 500 Internal Server Error in 108ms
+
+
+  
+ArgumentError (comparison of String with 2 failed):
+  
+app/controllers/sales_controller.rb:6:in `by_user'
+Started GET "/users/99/sales" for ::1 at 2017-09-10 12:25:47 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"99"}
+Completed 500 Internal Server Error in 143ms
+
+
+  
+NoMethodError (undefined method `json_response' for #<SalesController:0x0055cf02bb4c08>):
+  
+app/controllers/sales_controller.rb:10:in `by_user'
+Started GET "/users/99/sales" for ::1 at 2017-09-10 12:26:21 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"99"}
+Completed 500 Internal Server Error in 185ms
+
+
+  
+NameError (undefined local variable or method `element' for #<SalesController:0x0056421358e278>):
+  
+app/controllers/application_controller.rb:22:in `error_msg'
+app/controllers/sales_controller.rb:10:in `by_user'
+Started GET "/users/99/sales" for ::1 at 2017-09-10 12:26:43 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"99"}
+Completed 404 Not Found in 115ms (Views: 0.2ms)
+
+
+Started GET "/users/99/sales" for ::1 at 2017-09-10 12:28:26 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"99"}
+Completed 404 Not Found in 114ms (Views: 0.2ms)
+
+
+Started GET "/users/1/sales" for ::1 at 2017-09-10 12:28:29 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 404 Not Found in 4ms (Views: 0.1ms)
+
+
+Started GET "/users/1/sales" for ::1 at 2017-09-10 12:28:31 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"1"}
+Completed 404 Not Found in 4ms (Views: 0.2ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 12:28:38 -0500
+Processing by SalesController#by_user as */*
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 13ms (Views: 0.3ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:28:53 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"user_id"=>55, "buy"=>{"user_id"=>55}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:28:58 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>55, "user_id"=>55, "buy"=>{"product_id"=>55, "user_id"=>55}}
+Completed 400 Bad Request in 1056ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:29:33 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>1, "user_id"=>8, "buy"=>{"product_id"=>1, "user_id"=>8}}
+Completed 201 Created in 236ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:30:13 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 13ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:30:15 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 13ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:30:38 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 109ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:30:39 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 14ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:31:24 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 109ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:31:25 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 16ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:32:23 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 120ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:32:24 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 11ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:32:25 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 12ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:32:53 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 13ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:32:54 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 11ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:32:58 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 117ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:32:59 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 12ms (Views: 0.1ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:34:30 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 205 Reset Content in 109ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:34:31 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 205 Reset Content in 13ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:35:08 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 400 Bad Request in 107ms (Views: 0.5ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:35:24 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 202 Accepted in 105ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:36:49 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 208 Already Reported in 95ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:36:50 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 208 Already Reported in 12ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:36:59 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 206 Partial Content in 113ms (Views: 0.4ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:37:35 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 206 Partial Content in 118ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:37:57 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 107ms (Views: 0.2ms)
+
+
+Started POST "/buy" for ::1 at 2017-09-10 12:37:58 -0500
+Processing by BuyController#sale as */*
+  Parameters: {"product_id"=>2, "user_id"=>8, "buy"=>{"product_id"=>2, "user_id"=>8}}
+Completed 204 No Content in 11ms (Views: 0.1ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 16:51:49 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 204 No Content in 105ms
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 16:52:12 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 204 No Content in 114ms
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 16:53:43 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 204 No Content in 114ms
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 16:54:53 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 204 No Content in 115ms
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 16:54:54 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 204 No Content in 5ms
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 16:55:51 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 204 No Content in 119ms
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 16:56:11 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 204 No Content in 5ms
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 16:56:17 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 204 No Content in 106ms
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 16:56:24 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 204 No Content in 7ms
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 16:56:36 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 204 No Content in 113ms
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:00:46 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 118ms (Views: 0.1ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:01:30 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 114ms (Views: 0.1ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:02:11 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 120ms (Views: 0.2ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:02:28 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 123ms (Views: 0.2ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:02:56 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 93ms (Views: 0.1ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:03:24 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 145ms (Views: 0.5ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:09:32 -0500
+  
+SyntaxError (/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+nder sales.lenght > 0 ? (json: sales, status: 200) : (status
+                              ^
+/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+sales, status: 200) : (status: 404)
+                              ^):
+  
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:09:43 -0500
+  
+SyntaxError (/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+nder sales.lenght > 0 ? (json: sales, status: 200) : (status
+                              ^
+/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+sales, status: 200) : (status: 404)
+                              ^):
+  
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:12:02 -0500
+  
+SyntaxError (/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+er sales.lenght > 0 ? (status: 200) : (status: 404)
+                              ^
+/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+> 0 ? (status: 200) : (status: 404)
+                              ^):
+  
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:12:08 -0500
+  
+SyntaxError (/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+er sales.lenght > 0 ? (status: 200) : (status: 404)
+                              ^
+/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+> 0 ? (status: 200) : (status: 404)
+                              ^):
+  
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:12:42 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 500 Internal Server Error in 124ms
+
+
+  
+NoMethodError (undefined method `lenght' for []:Array
+Did you mean?  length):
+  
+app/controllers/sales_controller.rb:21:in `by_user_badly_done'
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:12:59 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 116ms (Views: 0.1ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:13:42 -0500
+  
+SyntaxError (/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+der sales.length > 0 ? (plain: "yea") : (plain: "nope")
+                              ^
+/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+> 0 ? (plain: "yea") : (plain: "nope")
+                              ^):
+  
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:15:13 -0500
+  
+SyntaxError (/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+der sales.length > 0 ? (plain: "yea") : (plain: "nope")
+                              ^
+/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+> 0 ? (plain: "yea") : (plain: "nope")
+                              ^):
+  
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+app/controllers/sales_controller.rb:21: syntax error, unexpected tLABEL
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:18:17 -0500
+  
+SyntaxError (/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:27: syntax error, unexpected tLABEL, expecting keyword_end
+r json: error_msg(400) status: 400
+                              ^):
+  
+app/controllers/sales_controller.rb:27: syntax error, unexpected tLABEL, expecting keyword_end
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:18:30 -0500
+  
+SyntaxError (/home/david/Arquitectura/sa_api_gateway/app/controllers/sales_controller.rb:27: syntax error, unexpected tLABEL, expecting keyword_end
+r json: error_msg(400) status: 400
+                              ^):
+  
+app/controllers/sales_controller.rb:27: syntax error, unexpected tLABEL, expecting keyword_end
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:19:02 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 404 Not Found in 120ms (Views: 0.3ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:19:30 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 404 Not Found in 120ms (Views: 0.1ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:19:41 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 404 Not Found in 123ms (Views: 0.1ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:19:51 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 404 Not Found in 115ms (Views: 0.1ms)
+
+
+Started GET "/users/5/sales" for ::1 at 2017-09-10 17:20:10 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"5"}
+Completed 200 OK in 120ms (Views: 0.6ms)
+
+
+Started GET "/users/15/sales" for ::1 at 2017-09-10 17:20:20 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"15"}
+Completed 404 Not Found in 106ms (Views: 0.1ms)
+
+
+Started GET "/users/asfdasf/sales" for ::1 at 2017-09-10 17:20:24 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"asfdasf"}
+Completed 404 Not Found in 16ms (Views: 0.2ms)
+
+
+Started GET "/users/4/sales" for ::1 at 2017-09-10 17:20:27 -0500
+Processing by SalesController#by_user_badly_done as */*
+  Parameters: {"user_id"=>"4"}
+Completed 404 Not Found in 12ms (Views: 0.1ms)
+
+
